@@ -1,5 +1,5 @@
 import sys
-import requests
+import requests # using the requests library probably isn't the fastest way to go.
 
 active_http = []
     
