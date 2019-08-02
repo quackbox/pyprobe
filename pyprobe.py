@@ -26,7 +26,7 @@ def ping_httpsserver(dns):
         active_http.append("https://" + dns)
         print("https://" + dns)
 
-        
+# main
 try:
     input_file = open(sys.argv[1], "r")
     output_file = sys.argv[2]
