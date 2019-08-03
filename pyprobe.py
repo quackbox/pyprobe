@@ -8,7 +8,7 @@ def ping_httpserver(dns):
     dns = dns.rstrip("\n")
     
     try:
-        http_response = requests.get("http://" + dns, timeout=5)
+        http_response = requests.head("http://" + dns, timeout=2.5)
     except:
         pass
     else:
@@ -19,7 +19,7 @@ def ping_httpsserver(dns):
     dns = dns.rstrip("\n")
     
     try:
-        https_response = requests.get("https://" + dns, timeout=5)
+        https_response = requests.head("https://" + dns, timeout=2.5)
     except:
         pass
     else:
